@@ -13,3 +13,4 @@ from langchain_core.prompts import ChatPromptTemplate
 
 # Disable warnings and info logs
 warnings.filterwarnings("ignore")
+logging.getLogger("transformers").setLevel(logging.ERROR)
