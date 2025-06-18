@@ -31,3 +31,6 @@ if prompt:
     st.chat_message('user').markdown(prompt)
     # Store the user prompt in state
     st.session_state.messages.append({'role':'user', 'content': prompt})
+    
+    # Phase 2 
+    groq_sys_prompt = ChatPromptTemplate.from_template("""You are very smart at everything, you always give the best, 
