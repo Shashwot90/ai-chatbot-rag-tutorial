@@ -34,3 +34,5 @@ if prompt:
     
     # Phase 2 
     groq_sys_prompt = ChatPromptTemplate.from_template("""You are very smart at everything, you always give the best, 
+                                            the most accurate and most precise answers. Answer the following Question: {user_prompt}.
+   
