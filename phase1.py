@@ -36,3 +36,8 @@ if prompt:
     groq_sys_prompt = ChatPromptTemplate.from_template("""You are very smart at everything, you always give the best, 
                                             the most accurate and most precise answers. Answer the following Question: {user_prompt}.
                                             Start the answer directly. No small talk please""")
+
+    #model = "mixtral-8x7b-32768"
+    model="llama3-8b-8192"
+
+    
