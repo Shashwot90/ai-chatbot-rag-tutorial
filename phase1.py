@@ -42,4 +42,5 @@ if prompt:
 
     groq_chat = ChatGroq(
             groq_api_key=os.environ.get("GROQ_API_KEY"), 
-   
+            model_name=model
+    )
