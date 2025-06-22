@@ -44,3 +44,7 @@ if prompt:
             groq_api_key=os.environ.get("GROQ_API_KEY"), 
             model_name=model
     )
+
+    chain = groq_sys_prompt | groq_chat | StrOutputParser()
+
+    
