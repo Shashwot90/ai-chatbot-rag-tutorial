@@ -48,4 +48,5 @@ if prompt:
     chain = groq_sys_prompt | groq_chat | StrOutputParser()
 
     response = chain.invoke({"user_prompt": prompt})
-   
+    #response = "I am your assistant"
+    
