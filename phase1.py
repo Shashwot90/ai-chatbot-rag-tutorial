@@ -50,4 +50,4 @@ if prompt:
     response = chain.invoke({"user_prompt": prompt})
     #response = "I am your assistant"
     st.chat_message('assistant').markdown(response)
-    
+    st.session_state.messages.append(
