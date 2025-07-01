@@ -16,3 +16,4 @@ from langchain.indexes import VectorstoreIndexCreator
 from langchain.chains import RetrievalQA
 
 # Disable warnings and info logs
+warnings.filterwarnings("ignore")
