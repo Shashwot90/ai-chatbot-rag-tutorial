@@ -17,3 +17,5 @@ from langchain.chains import RetrievalQA
 
 # Disable warnings and info logs
 warnings.filterwarnings("ignore")
+logging.getLogger("transformers").setLevel(logging.ERROR)
+
