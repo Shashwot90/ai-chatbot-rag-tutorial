@@ -22,3 +22,4 @@ logging.getLogger("transformers").setLevel(logging.ERROR)
 st.title('Ask Chatbot!')
 # Setup a session state variable to hold all the old messages
 if 'messages' not in st.session_state:
+    st.session_state.messages = []
