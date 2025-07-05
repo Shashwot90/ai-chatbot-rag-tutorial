@@ -27,3 +27,6 @@ if 'messages' not in st.session_state:
 # Display all the historical messages
 for message in st.session_state.messages:
     st.chat_message(message['role']).markdown(message['content'])
+
+
+@st.cache_resource 
