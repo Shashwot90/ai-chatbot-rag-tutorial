@@ -30,3 +30,5 @@ for message in st.session_state.messages:
 
 
 @st.cache_resource 
+def get_vectorstore():
+    
