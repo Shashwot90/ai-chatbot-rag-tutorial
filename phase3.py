@@ -31,4 +31,4 @@ for message in st.session_state.messages:
 
 @st.cache_resource 
 def get_vectorstore():
-    
+    pdf_name="./the_wonderful_wizard_of_oz.pdf"
