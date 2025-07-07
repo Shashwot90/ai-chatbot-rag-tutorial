@@ -33,4 +33,4 @@ for message in st.session_state.messages:
 def get_vectorstore():
     pdf_name="./the_wonderful_wizard_of_oz.pdf"
     loaders = [PyPDFLoader(pdf_name)]
-    
+    index = VectorstoreIndexCreator(
