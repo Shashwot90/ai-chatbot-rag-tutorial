@@ -34,3 +34,4 @@ def get_vectorstore():
     pdf_name="./the_wonderful_wizard_of_oz.pdf"
     loaders = [PyPDFLoader(pdf_name)]
     index = VectorstoreIndexCreator(
+        embedding=HuggingFaceEmbeddings(model_name='all-MiniLM-L12-v2'),
