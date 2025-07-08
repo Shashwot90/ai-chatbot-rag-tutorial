@@ -35,3 +35,4 @@ def get_vectorstore():
     loaders = [PyPDFLoader(pdf_name)]
     index = VectorstoreIndexCreator(
         embedding=HuggingFaceEmbeddings(model_name='all-MiniLM-L12-v2'),
+        text_splitter=RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
