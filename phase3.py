@@ -37,4 +37,4 @@ def get_vectorstore():
         embedding=HuggingFaceEmbeddings(model_name='all-MiniLM-L12-v2'),
         text_splitter=RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
     ).from_loaders(loaders)
-    
+    return index.vectorstore 
