@@ -42,3 +42,5 @@ def get_vectorstore():
     
 
 prompt = st.chat_input('Pass your prompt here')
+
+if prompt:
