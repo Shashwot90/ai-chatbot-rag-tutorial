@@ -38,3 +38,7 @@ def get_vectorstore():
         text_splitter=RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
     ).from_loaders(loaders)
     return index.vectorstore 
+
+    
+
+prompt = st.chat_input('Pass your prompt here')
