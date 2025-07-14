@@ -57,4 +57,4 @@ if prompt:
     model="llama3-8b-8192"
 
     groq_chat = ChatGroq(
-            
+            groq_api_key=os.environ.get("GROQ_API_KEY"), 
