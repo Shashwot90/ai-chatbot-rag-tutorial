@@ -61,3 +61,4 @@ if prompt:
             model_name=model
     )
     try:
+        vectorstore = get_vectorstore()
