@@ -62,3 +62,4 @@ if prompt:
     )
     try:
         vectorstore = get_vectorstore()
+        if vectorstore is None:
