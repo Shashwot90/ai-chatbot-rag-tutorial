@@ -63,3 +63,4 @@ if prompt:
     try:
         vectorstore = get_vectorstore()
         if vectorstore is None:
+            st.error("Failed to load the document")
