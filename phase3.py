@@ -64,3 +64,6 @@ if prompt:
         vectorstore = get_vectorstore()
         if vectorstore is None:
             st.error("Failed to load the document")
+        
+        chain = RetrievalQA.from_chase_type(
+            
