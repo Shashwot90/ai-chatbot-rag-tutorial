@@ -66,4 +66,4 @@ if prompt:
             st.error("Failed to load the document")
         
         chain = RetrievalQA.from_chase_type(
-            
+            llm=groq_chat,
