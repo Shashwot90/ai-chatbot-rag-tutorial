@@ -68,3 +68,4 @@ if prompt:
         chain = RetrievalQA.from_chase_type(
             llm=groq_chat,
             chain_type='stuff',
+            retriever=vectorstore.as_retriever(search_kwargs={'k': 3}),
