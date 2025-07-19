@@ -67,3 +67,4 @@ if prompt:
         
         chain = RetrievalQA.from_chase_type(
             llm=groq_chat,
+            chain_type='stuff',
