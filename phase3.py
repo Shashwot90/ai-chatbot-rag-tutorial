@@ -70,3 +70,4 @@ if prompt:
             chain_type='stuff',
             retriever=vectorstore.as_retriever(search_kwargs={'k': 3}),
             return_source_documents=True 
+        )
