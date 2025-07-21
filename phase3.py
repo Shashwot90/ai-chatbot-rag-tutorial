@@ -72,3 +72,4 @@ if prompt:
             return_source_documents=True 
         )
         # chain = groq_sys_prompt | groq_chat | StrOutputParser()
+        result = chain({'query': prompt})
