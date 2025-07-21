@@ -71,3 +71,4 @@ if prompt:
             retriever=vectorstore.as_retriever(search_kwargs={'k': 3}),
             return_source_documents=True 
         )
+        # chain = groq_sys_prompt | groq_chat | StrOutputParser()
