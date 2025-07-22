@@ -73,3 +73,4 @@ if prompt:
         )
         # chain = groq_sys_prompt | groq_chat | StrOutputParser()
         result = chain({'query': prompt})
+        response = result['result']
