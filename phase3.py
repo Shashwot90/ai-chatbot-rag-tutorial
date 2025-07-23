@@ -78,3 +78,4 @@ if prompt:
         
         
         #response = "I am your assistant"
+        st.chat_message('assistant').markdown(response)
