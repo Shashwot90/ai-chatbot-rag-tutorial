@@ -75,3 +75,6 @@ if prompt:
         result = chain({'query': prompt})
         response = result['result']
         # response = chain.invoke({"user_prompt": prompt})
+        
+        
+        #response = "I am your assistant"
